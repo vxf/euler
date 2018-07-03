@@ -1,3 +1,5 @@
+from functools import reduce
+
 # fast prime number list generator using a sieve algorithm
  
 def primes(n):
