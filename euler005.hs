@@ -9,7 +9,7 @@ import Data.List
 
 -- quick dirty solution that multiplies the unique factors between 1 and 20
 solve :: Integer -> Integer
-solve y = go (nub (foldr (++) [] [(factorise x) | x <- [1..(y+1)]])) where
+solve y = go (nub (foldr (++) [] [(factorise x) | x <- [1..y]])) where
         go [] = 1
         go ((x,_) : xs) = x * (go xs)
 
